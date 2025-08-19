@@ -9,10 +9,8 @@ const NameLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name.trim() !== '') {
-      // localStorage ga saqlash
+    
       localStorage.setItem("username", name);
-
-      // console ga chiqarish
       console.log("Saved name:", name);
 
       setSubmitted(true);

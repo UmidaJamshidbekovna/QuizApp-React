@@ -9,7 +9,7 @@ const QuizCard = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  // Random 10 ta savol olish
+
   useEffect(() => {
     const shuffled = [...questionsData].sort(() => Math.random() - 0.5);
     setQuestions(shuffled.slice(0, 10));
